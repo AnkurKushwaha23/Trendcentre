@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "559605460344",
+    "project_id": "shopstyle-c95bc",
+    "storage_bucket": "shopstyle-c95bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559605460344:android:7c2375b3b46e5be335ec8d",
+        "android_client_info": {
+          "package_name": "com.shop.shopstyle"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMp4zHUG-3ca58J-VJWhTbTK0eTWU2850"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

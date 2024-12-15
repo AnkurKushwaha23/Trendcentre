@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cartCard"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_marginHorizontal="6dp"
+    android:layout_marginVertical="5dp"
+    android:backgroundTint="@color/white"
+    android:padding="4dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="130dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgCartItem"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_grey"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtCartItemBrand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="1dp"
+                android:text="Brand"
+                android:textColor="@color/greyDark"
+                app:layout_constraintBottom_toBottomOf="@+id/imgCartItem"
+                app:layout_constraintEnd_toEndOf="@+id/imgCartItem" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical"
+                android:padding="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/txtCartItemName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="1"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="Asics Basketball Shoe"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtCartItemPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5000"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/txtCartItemSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/bg_border"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCartItemMinus"
+                    android:layout_width="24dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_border"
+                    android:backgroundTint="@color/grey"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    app:dividerColor="@color/black"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvCartItemCount"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="01"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    app:dividerColor="@color/black"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCartItemAdd"
+                    android:layout_width="24dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_border"
+                    android:backgroundTint="@color/grey"
+                    android:text="+"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+                    android:textColor="@color/black"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/imgBtnRemoveCartItem"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bg_grey"
+                android:src="@drawable/ic_remove_shopping_cart"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
